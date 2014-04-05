@@ -1,3 +1,9 @@
-body {
+body,
+.container-fluid,
+.row {
+	background-color: rgb(240,0,240);
+}
+
+.chroma {
 	background-color: rgb(240,0,240);
 }
