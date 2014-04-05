@@ -5,6 +5,8 @@ $(document).keydown(function(event) {
 	var isRepeat = (keyPressedArray[""+keycode] == true) ? true : false;
 	keyPressedArray[""+keycode] = true;
 
+	$('.config').append('<p>Pressed: ' + keycode + '</p>');
+
 	//event.preventDefault();
 	if (keycode == 37) {
 		//fButtonPress('left', 1, isRepeat);

@@ -1,7 +1,7 @@
 body,
 .container-fluid,
 .row {
-	background-color: rgb(240,0,240);
+	background-color: rgb(240, 0, 240);
 }
 
 body {
@@ -9,5 +9,5 @@ body {
 }
 
 .chroma {
-	background-color: rgb(240,0,240);
+	background-color: rgb(240, 0, 240);
 }
