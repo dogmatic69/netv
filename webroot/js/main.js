@@ -1,9 +1,10 @@
 var keyPressedArray = new Array();
 
 $(document).keydown(function(event) {
+	console.log('keydown');
 	var keycode = event.which;
-	var isRepeat = (keyPressedArray[""+keycode] == true) ? true : false;
-	keyPressedArray[""+keycode] = true;
+	var isRepeat = (keyPressedArray['' + keycode] == true) ? true : false;
+	keyPressedArray['' + keycode] = true;
 
 	$('.config').append('<p>Pressed: ' + keycode + '</p>');
 
