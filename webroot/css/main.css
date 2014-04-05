@@ -5,9 +5,13 @@ body,
 }
 
 body {
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .chroma {
 	background-color: rgb(240, 0, 240);
+}
+
+#weather {
+	
 }

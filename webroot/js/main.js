@@ -1,4 +1,5 @@
-var keyPressedArray = new Array();
+var keyPressedArray = new Array(),
+	weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q=telford&mode=html';
 
 $(document).keydown(function(event) {
 	console.log('keydown');
@@ -33,3 +34,9 @@ $(document).keyup(function(event) {
 	keyPressedArray['' + event.which] = false;
 	return true;
 });
+
+$(document).ready(function() {
+	$.get(weatherUrl, function(data) {
+		$('#weather').html(data);
+	});
+})
